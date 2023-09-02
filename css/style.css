@@ -1,0 +1,142 @@
+:root{
+  /*primary*/
+  --red: hsl(0, 100%, 74%) ;
+  --green: hsl(154, 59%, 51%) ;
+  /*accent*/
+  --blue: hsl(248, 32%, 49%);
+  /*accent*/
+  --dark-blue: hsl(249, 10%, 26%); 
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: .8rem;
+  display: flex;
+  justify-content: center;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-color: var(--red);
+}
+
+/*layout*/
+.container {
+  width:75%;
+  max-width: 1440px;
+  padding-top: 6em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-flex {
+  width: 48%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 2.5em;
+  gap: 1.5em;
+}
+
+@media (max-width: 650px) {
+  .container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .container-flex {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3em;
+  }
+}
+
+/*style*/
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: .8em;
+}
+
+@media (max-width: 650px) {
+  .title{
+    font-size: 2rem;
+  }
+}
+
+.info-paragraph {
+  font-size: larger;
+}
+
+.info-paragraph{
+  font-weight: 500;
+  line-height: 1.4em;
+  color: white;
+}
+
+.promotion-box{
+  background-color: var(--blue);
+  color: white;
+  text-align: center;
+  padding: 1.4em 0;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem rgb(0 0 0 / 0.2);
+  margin-bottom: 1.2em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.sign-up-form{
+  font-family: 'Poppins', sans-serif; 
+  background-color: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 0.4rem rgb(0 0 0 / 0.2);
+}
+
+input {
+  padding: 1em 0em;
+  border-radius: .4em;
+  border: 2px solid gray
+}
+
+input:focus {
+  background: rgb(247, 247, 247);
+}
+
+button{
+  font-family: inherit;
+  font-weight: 500;
+  padding: 1em;
+  border-radius: 0.4rem;
+  background-color: var(--green);
+  color: white;
+  border: 2px solid hsl(155, 60%, 39%);
+}
+
+input[placeholder]{
+  font-family: inherit;
+  font-weight: 500;
+  padding-left: 1.6em;
+}
+
+button:hover,
+button:active{
+  background-color: hsl(155, 60%, 39%);
+  border-color: hsl(155, 60%, 39%);
+  color: white;
+}
+
+.agreement-text{
+  font-size: 0.6rem;
+  color: gray;
+  text-align: center;
+}
+
+.agreement-bold{
+  color: var(--red);
+}

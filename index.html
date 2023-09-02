@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  
+  <!--import fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <p style="background-image: url('./images/bg-intro-desktop.png')"></p>
+
+  <div class="container">
+
+    <div class="container-flex">
+      <h1 class="title">Learn to code by watching others</h1>
+      <p class="info-paragraph">See how experienced developers solve problems in real-time. 
+        Watching scripted tutorials is great, but understanding how developers think is invaluable.
+      </p>
+    </div>
+  
+    <div class="container-flex">
+      <div class="promotion-box">
+        <p class="promotion"><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </div>
+  
+      <form class="sign-up-form">
+        <input name="name" type="text" placeholder="First Name">
+        <input name="surname" type="text" placeholder="Last Name">
+        <input name="email" type="text" placeholder="Email Address">
+        <input name="password" type="password" placeholder="Password">
+        <button type="submit">CLAIM YOUR FREE TRIAL</button>
+        <p class="agreement-text">By clicking the button, you are agreeing to our <strong class="agreement-bold">Terms and Services</strong></p>
+      </form>
+    </div>
+
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
